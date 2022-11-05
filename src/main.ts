@@ -3,6 +3,7 @@ import { createPinia } from 'pinia';
 
 import App from './App.vue';
 import router from './router';
+import './main.css';
 
 (import.meta as ImportMeta & { env: any }).env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true';
 
