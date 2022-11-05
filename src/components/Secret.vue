@@ -36,6 +36,7 @@ function addCity(cityName: string) {
   set(citiesRef, [...cities.value, cityName])
     .then(() => {
       // Data saved successfully!
+      console.log('Data saved successfully!');
     })
     .catch(error => {
       // The write failed...
