@@ -5,7 +5,8 @@ import Index from './Index.vue';
 import router from './router';
 import './main.css';
 
-(import.meta as ImportMeta & { env: any }).env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true';
+const meta = import.meta as ImportMeta & { env: { VITE_FIREBASE_KEY: string } };
+meta.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true';
 
 const app = createApp(Index);
 

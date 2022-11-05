@@ -8,9 +8,14 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     About: typeof import('./components/About.vue')['default']
+    Header: typeof import('./components/Header.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     Home: typeof import('./components/Home.vue')['default']
+    Login: typeof import('./components/Login.vue')['default']
+    Main: typeof import('./components/Main.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Secret: typeof import('./components/Secret.vue')['default']
+    SystemInformation: typeof import('./components/SystemInformation.vue')['default']
   }
 }

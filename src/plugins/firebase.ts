@@ -3,11 +3,12 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getDatabase, ref } from 'firebase/database';
 import { getAnalytics } from 'firebase/analytics';
+const meta = import.meta as ImportMeta & { env: { VITE_FIREBASE_KEY: string } };
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: (import.meta as ImportMeta & { env: { VITE_FIREBASE_KEY: string } }).env.VITE_FIREBASE_KEY,
+  apiKey: meta.env.VITE_FIREBASE_KEY,
   authDomain: 'geo-mud-report.firebaseapp.com',
   // The value of `databaseURL` depends on the location of the database
   databaseURL: 'https://geo-mud-report-default-rtdb.firebaseio.com',

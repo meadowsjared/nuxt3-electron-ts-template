@@ -1,20 +1,91 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-</script>
-
 <template>
-  <div class="flex justify-center">
-    <img alt="Vite logo" class="w-28 m-2" src="./assets/vite.svg" />
-    <img alt="Vue logo" class="w-28 m-2" src="./assets/logo.png" />
-    <img alt="Electron logo" class="w-28 m-2" src="./assets/electron.png" />
-    <img alt="TS logo" class="w-28 m-2" src="./assets/ts.png" />
-  </div>
-  <HelloWorld msg="Vite + Vue 3 + Electron + TypeScript" />
-  <br />
-  <p class="plugins text-xl font-bold mt-5">Plugins</p>
-  <div class="flex justify-center">
-    <img alt="vue router logo" class="w-28 m-2" src="./assets/vueRouter.png" />
-    <img alt="pinia logo" class="w-28 m-2" src="./assets/pinia.svg" />
+  <div class="e-nuxt-container">
+    <h1 class="title">Firebase Test App</h1>
+    <div class="e-nuxt-content">
+      <div class="e-nuxt-logo">
+        <img style="max-width: 100%" src="./assets/electron.png" alt="electron icon" />
+      </div>
+      <div class="e-nuxt-system-info bg-gray-100">
+        <Header msg="test" />
+        <router-view />
+      </div>
+    </div>
+    <div class="e-nuxt-links">
+      <div class="e-nuxt-button" @click="openURL('https://github.com/michalzaq12/electron-nuxt')">Github</div>
+      <div class="e-nuxt-button" @click="openURL('https://nuxtjs.org/guide')">Nuxt.js</div>
+      <div class="e-nuxt-button" @click="openURL('https://electronjs.org/docs')">Electron.js</div>
+    </div>
   </div>
 </template>
+
+<script setup lang="ts">
+function openURL(url: string) {
+  window.open(url);
+}
+
+// window.$nuxt.$router.push({ path: '/login' });
+
+// export default {
+//   name: "IndexPage",
+//   components: {
+//     SystemInformation,
+//   },
+//   data() {
+//     return {
+//       externalContent: "",
+//     };
+//   },
+//   methods: {
+//     openURL(url) {
+//       window.open(url);
+//     },
+//   },
+// };
+</script>
+
+<style>
+.e-nuxt-container {
+  min-height: calc(100vh - 50px);
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  font-family: Helvetica, sans-serif;
+}
+
+.e-nuxt-content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.e-nuxt-logo {
+  width: 400px;
+}
+
+.e-nuxt-system-info {
+  padding: 20px;
+  border-top: 1px solid #397c6d;
+  border-bottom: 1px solid #397c6d;
+}
+
+.e-nuxt-links {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.e-nuxt-button {
+  color: #364758;
+  padding: 5px 20px;
+  border: 1px solid #397c6d;
+  margin: 0 20px;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+.e-nuxt-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #397c6d;
+}
+</style>

@@ -183,12 +183,12 @@ window.addEventListener('DOMContentLoaded', () => {
     "mac": {
       "artifactName": "${productName}_${version}.${ext}",
       "target": [
-        "dmg"
+        "esnext"
       ]
     },
     "win": {
       "target": [{
-        "target": "nsis",
+        "target": "esnext",
         "arch": [
           "x64"
         ]

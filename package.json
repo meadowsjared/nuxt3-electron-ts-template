@@ -11,7 +11,7 @@
     "vite:preview": "vite preview",
     "ts": "tsc",
     "watch": "tsc -w",
-    "lint": "eslint -c .eslintrc --ext .ts ./src",
+    "lint": "eslint -c .eslintrc.js --ext .ts ./src",
     "app:dev": "tsc && concurrently vite \" electron .\" \"tsc -w\"",
     "app:build": "npm run vite:build && tsc && electron-builder",
     "app:preview": "npm run vite:build && tsc && electron ."
@@ -29,13 +29,13 @@
     "mac": {
       "artifactName": "${productName}_${version}.${ext}",
       "target": [
-        "dmg"
+        "esnext"
       ]
     },
     "win": {
       "target": [
         {
-          "target": "nsis",
+          "target": "esnext",
           "arch": [
             "x64"
           ]
@@ -57,11 +57,13 @@
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
+    "@typescript-eslint/parser": "^5.42.0",
     "@vitejs/plugin-vue": "^3.2.0",
     "autoprefixer": "^10.4.13",
     "concurrently": "^7.5.0",
     "electron": "^21.2.2",
     "electron-builder": "^23.6.0",
+    "eslint": "^8.26.0",
     "firebase": "^9.13.0",
     "pinia": "^2.0.23",
     "postcss": "^8.4.18",
