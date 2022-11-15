@@ -4,8 +4,10 @@
   "version": "0.0.0",
   "author": "Your Name",
   "main": "dist/electron/main/main.js",
+  "description": "used to track mud report data and reports",
   "scripts": {
     "dev": "pnpm app:dev",
+    "build": "pnpm app:build",
     "vite:dev": "vite",
     "vite:build": "vue-tsc --noEmit && vite build",
     "vite:preview": "vite preview",
@@ -29,13 +31,13 @@
     "mac": {
       "artifactName": "${productName}_${version}.${ext}",
       "target": [
-        "esnext"
+        "dmg"
       ]
     },
     "win": {
       "target": [
         {
-          "target": "esnext",
+          "target": "nsis",
           "arch": [
             "x64"
           ]
