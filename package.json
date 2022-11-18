@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "author": "Your Name",
-  "main": "dist/electron/main/main.js",
+  "main": "src/electron/main/main.js",
   "description": "used to track mud report data and reports",
   "scripts": {
     "dev": "pnpm app:dev",

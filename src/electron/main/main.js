@@ -1,5 +1,5 @@
-import { join } from 'path';
-import { app, BrowserWindow } from 'electron';
+const { join } = require('path');
+const { app, BrowserWindow } = require('electron');
 
 const isDev = process.env.npm_lifecycle_event === 'app:dev' ? true : false;
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true';
@@ -48,5 +48,3 @@ app.on('window-all-closed', () => {
     app.quit();
   }
 });
-
-export default { app };
