@@ -1,40 +1,40 @@
 <template>
   <div>
-    <div class="text-[#364758] text-2xl">Information</div>
+    <div class="text-flintPurple text-2xl">Information</div>
     <div class="mt-2">
-      <div class="item">
-        <div class="name">Pinia:</div>
-        <div class="value">
+      <div class="flex mb-2">
+        <div class="text-neutralDark-400 mr-2">Pinia:</div>
+        <div class="font-bold text-neutralDark-500">
           {{ versions?.pinia ?? 'N/A' }}
         </div>
       </div>
-      <div class="item">
-        <div class="name">Vue.js:</div>
-        <div class="value">
+      <div class="flex mb-2">
+        <div class="text-neutralDark-400 mr-2">Vue.js:</div>
+        <div class="font-bold text-neutralDark-500">
           {{ versions?.vue ?? 'N/A' }}
         </div>
       </div>
-      <div class="item">
-        <div class="name">Electron:</div>
-        <div class="value">
+      <div class="flex mb-2">
+        <div class="text-neutralDark-400 mr-2">Electron:</div>
+        <div class="font-bold text-neutralDark-500">
           {{ versions?.electron ?? 'N/A' }}
         </div>
       </div>
-      <div class="item">
-        <div class="name">Node:</div>
-        <div class="value">
+      <div class="flex mb-2">
+        <div class="text-neutralDark-400 mr-2">Node:</div>
+        <div class="font-bold text-neutralDark-500">
           {{ versions?.node ?? 'N/A' }}
         </div>
       </div>
-      <div class="item">
-        <div class="name">Chrome:</div>
-        <div class="value">
+      <div class="flex mb-2">
+        <div class="text-neutralDark-400 mr-2">Chrome:</div>
+        <div class="font-bold text-neutralDark-500">
           {{ versions?.chrome ?? 'N/A' }}
         </div>
       </div>
-      <div class="item">
-        <div class="name">Platform:</div>
-        <div class="value">
+      <div class="flex mb-2">
+        <div class="text-neutralDark-400 mr-2">Platform:</div>
+        <div class="font-bold text-neutralDark-500">
           {{ versions?.platform ?? 'N/A' }}
         </div>
       </div>
@@ -57,19 +57,3 @@ interface Versions {
 // const versions = process?.versions ?? {};
 const versions = ref((window as Window & { electron?: { versions: Versions } }).electron?.versions);
 </script>
-
-<style scoped>
-.item {
-  display: flex;
-  margin-bottom: 6px;
-}
-.name {
-  color: #6a6a6a;
-  margin-right: 6px;
-}
-
-.value {
-  color: #364758;
-  font-weight: bold;
-}
-</style>
