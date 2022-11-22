@@ -4,10 +4,20 @@
       <h3>Login</h3>
       <form @submit.prevent="pressed">
         <div class="login">
-          <input v-model="email" type="text" placeholder="email" class="p-5 w-full text-2xl m-1" />
+          <input
+            v-model="email"
+            type="text"
+            placeholder="email"
+            autocomplete="username"
+            class="p-5 w-full text-2xl m-1" />
         </div>
         <div class="password" :class="{ 'text-vampireStateBuilding': errorObj.message }">
-          <input v-model="password" type="password" placeholder="password" class="p-5 w-full text-2xl m-1" />
+          <input
+            v-model="password"
+            type="password"
+            placeholder="password"
+            autocomplete="current-password"
+            class="p-5 w-full text-2xl m-1" />
         </div>
         <button class="w-96 h-20 border">Login</button>
       </form>
