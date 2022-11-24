@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>This is secret info {{ props.q }}</h1>
-    <div v-for="city in cities" :key="city">{{ city }}</div>
+    <city-row v-for="city in cities" :key="city.id" :city="city" />
     <button @click="addCity('stuff')">add stuff</button>
   </div>
 </template>
@@ -10,6 +10,7 @@
 import { onValue, set } from 'firebase/database';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { City } from '../domain/City';
 import { auth, citiesRef } from '../plugins/firebase';
 
 const props = defineProps<{
@@ -18,13 +19,13 @@ const props = defineProps<{
 
 const router = useRouter();
 
-const cities = ref([] as string[]);
+const cities = ref([] as City[]);
 
 if (auth.currentUser === null) {
   router.push({ path: '/login', query: { q: 'test' } });
 } else {
   onValue(citiesRef, snapshot => {
-    const data = snapshot.val() as string[];
+    const data = snapshot.val() as City[];
     cities.value = data.filter(value => value !== undefined);
     console.log('cities.value', cities.value);
   });
