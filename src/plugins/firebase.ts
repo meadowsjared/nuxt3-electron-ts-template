@@ -29,4 +29,4 @@ const db = getDatabase(app);
 // get a reference to the service
 const citiesRef = ref(db, 'cities');
 
-export { auth, citiesRef, analytics };
+export { auth, citiesRef, analytics, db };
