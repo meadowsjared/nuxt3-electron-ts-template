@@ -16,13 +16,7 @@ git clone https://github.com/meadowsjared/geo-mud-report.git
 pnpm i
 ```
 
-### 3. run
-
-```bash
-pnpm dev
-```
-
-## 4. Run
+### 3. Run
 
 ### dev mode
 
