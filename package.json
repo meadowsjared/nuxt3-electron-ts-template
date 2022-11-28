@@ -1,10 +1,11 @@
 {
-  "name": "vite-vue3-electron-ts-template",
+  "name": "geo-mud-report",
   "private": true,
   "version": "0.0.0",
-  "author": "Your Name",
+  "author": "Jared Meadows <meadowsjared@gmail.com>",
   "main": "src/electron/main/main.js",
-  "description": "used to track mud report data and reports",
+  "description": "Geo Drilling Mud Report App",
+  "homepage": "https://github.com/meadowsjared/geo-mud-report/blob/main/README.md",
   "scripts": {
     "dev": "pnpm app:dev",
     "build": "pnpm app:build",
