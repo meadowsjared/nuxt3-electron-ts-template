@@ -26,7 +26,8 @@
       "output": "release/${version}"
     },
     "files": [
-      "dist"
+      "dist",
+      "src/electron/main/main.js"
     ],
     "mac": {
       "artifactName": "${productName}_${version}.${ext}",
