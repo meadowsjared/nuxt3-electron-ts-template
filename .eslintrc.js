@@ -13,7 +13,7 @@ module.exports = {
   // add your custom rules here
   rules: {
     // StandardJS — The Rules
-    indent: ['error', 2], // 2 spaces – for indentation
+    indent: ['off', 2], // 2 spaces – for indentation
     'max-len': ['error', { code: 120 }],
     'no-console': 'off',
     'arrow-parens': ['error', 'as-needed'],
