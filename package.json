@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "pnpm app:dev",
     "build": "pnpm app:build",
+    "preview": "pnpm app:preview",
     "vite:dev": "vite",
     "vite:build": "vue-tsc --noEmit && vite build",
     "vite:preview": "vite preview",
