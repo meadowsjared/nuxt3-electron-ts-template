@@ -27,11 +27,11 @@ pnpm dev
 ### preview mode
 
 ```bash
-pnpm app:preview  
+pnpm preview  
 ```
 
 ### build app
 
 ```bash
-pnpm app:build
+pnpm build
 ```
