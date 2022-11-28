@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { storeToRefs } from 'pinia';
-import { useCounterStore } from '../store/counter';
+import { useCityStore } from '../store/city';
 
-const { count } = storeToRefs(useCounterStore());
+const { count } = storeToRefs(useCityStore());
 </script>
 
 <template>
