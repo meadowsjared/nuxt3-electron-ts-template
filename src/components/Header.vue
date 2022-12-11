@@ -10,12 +10,6 @@
       <div>
         <router-link to="about" exact> About </router-link>
       </div>
-      <div>
-        <router-link to="login" exact> Login </router-link>
-      </div>
-      <div>
-        <router-link to="secret" exact> Secret </router-link>
-      </div>
     </nav>
   </header>
 </template>
