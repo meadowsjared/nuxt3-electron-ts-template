@@ -25,6 +25,9 @@ module.exports = {
       lg: ['1.125rem', '1.25'],
       xl: ['1.25rem', '1.25'],
       '2xl': ['1.5rem', '1.25'],
+      '3xl': ['2rem', '1.25'],
+      '4xl': ['2.5rem', '1.25'],
+      '5xl': ['3rem', '1.25'],
     },
     colors: {
       current: 'currentColor',
