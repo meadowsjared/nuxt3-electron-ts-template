@@ -1,11 +1,11 @@
 {
-  "name": "geo-mud-report",
+  "name": "vite-vue3-electron-ts-template",
   "private": true,
   "version": "0.0.0",
   "author": "Jared Meadows <meadowsjared@gmail.com>",
   "main": "src/electron/main/main.js",
-  "description": "Geo Drilling Mud Report App",
-  "homepage": "https://github.com/meadowsjared/geo-mud-report/blob/main/README.md",
+  "description": "A simple starter app built with just Electron, Vue3, Typescript, and Vite",
+  "homepage": "https://github.com/meadowsjared/vite-vue3-electron-ts-template/blob/main/README.md",
   "scripts": {
     "dev": "pnpm app:dev",
     "build": "pnpm app:build",
@@ -69,7 +69,6 @@
     "electron": "^21.2.2",
     "electron-builder": "^23.6.0",
     "eslint": "^8.26.0",
-    "firebase": "^9.13.0",
     "pinia": "^2.0.23",
     "postcss": "^8.4.18",
     "typescript": "^4.8.4",
