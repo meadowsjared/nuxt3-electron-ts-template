@@ -58,7 +58,8 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
     "tailwindcss": "^3.2.2",
-    "vue": "^3.2.41"
+    "vue": "^3.2.41",
+    "vue-inline-svg": "^3.1.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
