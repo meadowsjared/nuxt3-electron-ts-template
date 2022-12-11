@@ -1,6 +1,6 @@
 <template>
   <div class="e-nuxt-container">
-    <h1 class="title">Firebase Test App</h1>
+    <h1 class="title">Electron Test App</h1>
     <div class="e-nuxt-content">
       <div class="e-nuxt-logo">
         <img style="max-width: 100%" src="./assets/electron.png" alt="electron icon" />
