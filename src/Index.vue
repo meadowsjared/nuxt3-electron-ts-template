@@ -1,6 +1,6 @@
 <template>
   <div class="e-nuxt-container">
-    <h1 class="title">Electron Test App</h1>
+    <h1 class="title text-3xl font-semibold text-arubaGreen pt-5">Electron Test App</h1>
     <div class="e-nuxt-content">
       <div class="e-nuxt-logo">
         <img style="max-width: 100%" src="./assets/electron.png" alt="electron icon" />
@@ -53,7 +53,7 @@ function openURL(url: string) {
 .e-nuxt-content {
   display: flex;
   justify-content: space-around;
-  padding-top: 100px;
+  padding-top: 50px;
   align-items: flex-start;
   flex-wrap: wrap;
 }
@@ -69,7 +69,7 @@ function openURL(url: string) {
 }
 
 .e-nuxt-links {
-  padding: 100px 0;
+  padding: 25px 0;
   display: flex;
   justify-content: center;
 }
