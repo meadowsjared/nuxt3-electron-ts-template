@@ -1,13 +1,13 @@
 # Vite+Vue3+Electron+Typescript template
 
-![screenshot](./src/assets/screenshot.png)
+![screenshot](./src/assets/images/screenshot.png)
 
 ## Get Started
 
 ### 1. clone this repository
 
 ```bash
-git clone https://github.com/meadowsjared/geo-mud-report.git
+git clone https://github.com/meadowsjared/nuxt3-electron-ts-template.git
 ```
 
 ### 2. install packages
