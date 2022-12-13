@@ -16,7 +16,12 @@ git clone https://github.com/meadowsjared/nuxt3-electron-ts-template.git
 pnpm i
 ```
 
-### 3. Run
+### 3. Generate the nuxt configuration
+```bash
+pnpm nuxt:generate
+```
+
+### 4. Run
 
 ### dev mode
 
