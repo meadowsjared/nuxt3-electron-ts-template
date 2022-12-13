@@ -18,9 +18,5 @@
     },
     "types": ["vite/client", "node"]
   },
-  "include": [
-    "src/electron/**/*",
-    "src/**/*.vue",
-  ],
   "extends": "./.nuxt/tsconfig.json"
 }
