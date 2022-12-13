@@ -5,37 +5,37 @@
       <div class="flex mb-2">
         <div class="text-neutralDark-400 mr-2">Pinia:</div>
         <div class="font-bold text-neutralDark-500">
-          {{ _versions?.pinia ?? 'N/A' }}
+          {{ versions?.pinia ?? 'N/A' }}
         </div>
       </div>
       <div class="flex mb-2">
         <div class="text-neutralDark-400 mr-2">Vue.js:</div>
         <div class="font-bold text-neutralDark-500">
-          {{ _versions?.vue ?? 'N/A' }}
+          {{ versions?.vue ?? 'N/A' }}
         </div>
       </div>
       <div class="flex mb-2">
         <div class="text-neutralDark-400 mr-2">Electron:</div>
         <div class="font-bold text-neutralDark-500">
-          {{ _versions?.electron ?? 'N/A' }}
+          {{ versions?.electron ?? 'N/A' }}
         </div>
       </div>
       <div class="flex mb-2">
         <div class="text-neutralDark-400 mr-2">Node:</div>
         <div class="font-bold text-neutralDark-500">
-          {{ _versions?.node ?? 'N/A' }}
+          {{ versions?.node ?? 'N/A' }}
         </div>
       </div>
       <div class="flex mb-2">
         <div class="text-neutralDark-400 mr-2">Chrome:</div>
         <div class="font-bold text-neutralDark-500">
-          {{ _versions?.chrome ?? 'N/A' }}
+          {{ versions?.chrome ?? 'N/A' }}
         </div>
       </div>
       <div class="flex mb-2">
         <div class="text-neutralDark-400 mr-2">Platform:</div>
         <div class="font-bold text-neutralDark-500">
-          {{ _versions?.platform ?? 'N/A' }}
+          {{ versions?.platform ?? 'N/A' }}
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 
 interface Versions {
   chrome: string;
@@ -54,10 +54,10 @@ interface Versions {
   pinia: string;
 }
 
-const _versions = ref<Versions | undefined>(undefined);
-try {
-  _versions.value = (window as { electron?: { versions: Versions } }).electron?.versions;
-} catch (error) {
-  // ignore
-}
+const versions = ref<Versions | undefined>(undefined);
+
+onMounted(() => {
+  versions.value = (window as { electron?: { versions: Versions } }).electron?.versions;
+})
+
 </script>

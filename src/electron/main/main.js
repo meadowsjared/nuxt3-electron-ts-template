@@ -22,6 +22,7 @@ function createWindow() {
   } else {
     mainWindow.loadFile(join(__dirname, '../../index.html'));
   }
+  // @ts-ignore
   // mainWindow.loadURL( //this doesn't work on macOS in build and preview mode
   //     isDev ?
   //     'http://localhost:3000' :
