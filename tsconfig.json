@@ -21,7 +21,6 @@
   "include": [
     "src/electron/**/*",
     "src/**/*.vue",
-    "components.d.ts"
   ],
   "extends": "./.nuxt/tsconfig.json"
 }
