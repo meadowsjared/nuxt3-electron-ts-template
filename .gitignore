@@ -1,6 +1,10 @@
 # Logs
 logs
 *.log
+.nuxt
+.nitro
+.cache
+.output
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

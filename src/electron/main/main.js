@@ -1,14 +1,14 @@
 const { join } = require('path');
 const { app, BrowserWindow } = require('electron');
 
-const isDev = process.env.npm_lifecycle_event === 'app:dev' ? true : false;
+const isDev = process.env.npm_lifecycle_event === 'app:dev';
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true';
 
 function createWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 1200,
-    height: 900,
+    height: 950,
     webPreferences: {
       preload: join(__dirname, '../preload/preload.js'),
       nodeIntegration: true,

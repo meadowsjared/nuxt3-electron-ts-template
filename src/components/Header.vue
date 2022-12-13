@@ -2,13 +2,13 @@
   <header class="main-header">
     <nav>
       <div>
-        <router-link to="system" exact> System info </router-link>
+        <NuxtLink to="/"> System info </NuxtLink>
       </div>
       <div>
-        <router-link to="home" exact> Home </router-link>
+        <NuxtLink to="home"> Home </NuxtLink>
       </div>
       <div>
-        <router-link to="about" exact> About </router-link>
+        <NuxtLink to="about"> About </NuxtLink>
       </div>
     </nav>
   </header>

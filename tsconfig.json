@@ -10,7 +10,7 @@
     "resolveJsonModule": true,
     "isolatedModules": false,
     "esModuleInterop": true,
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext", "dom", "es2018"],
     "skipLibCheck": true,
     "outDir": "dist/electron",
     "paths": {
@@ -23,7 +23,5 @@
     "src/**/*.vue",
     "components.d.ts"
   ],
-  "references": [{
-    "path": "./tsconfig.node.json"
-  }]
+  "extends": "./.nuxt/tsconfig.json"
 }
